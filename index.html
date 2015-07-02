@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="root">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<title>Magic Mirror</title> 
+		<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/0.0.1/css/weather-icons.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand" type="text/css" media="screen" />
+	</head>
+	<body ng-controller="MagicMirror">
+		<!-- LOADING ICON -->
+		<div class="module top-center middle refresh" ng-show="refreshing">
+		    <div class="larger lightest"><i class="ion-ios7-reloading"></i></div>
+		    <div class="lightest" ng-bind="refreshMessage"></div>
+		</div>
+		
+		
+		<div ng-class="{show:show_app}" class="wrapper ng-cloak">
+			
+			<!-- CLOCK -->
+			<div class="module larger top-left">
+				<i class="ion-ios7-clock-outline"></i> {{time | date: 'h:mm' }}<sup>{{time | date: 'a' }}</sup>
+			</div>
+			
+			<!-- DATE -->
+			<div class="module larger top-right">
+	            <i class="ion-ios7-calendar-outline"></i> {{time | date: 'MMM d' }}
+			</div>
+			
+			
+			<div id="animation">
+				<ul>
+					<li><div ng-include="'weather.html'"></div></li>
+					<li><div ng-include="'calendar.html'"></div></li>
+				</ul>
+			</div>
+			
+			
+			<!--
+			<div ng-include="'weather.html'"></div>
+			
+			<div ng-include="'calendar.html'"></div>
+			 -->
+			
+			
+			
+			
+			
+		</div>
+		
+		<!-- SCRIPTS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services/config.js"></script>
+        <script src="js/services/weather.js"></script>
+        <script src="js/services/calendar.js"></script>
+        <script src="js/services/display.js"></script>
+
+	</body>
+</html>

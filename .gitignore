@@ -1,0 +1,5 @@
+config.json
+display.json
+Vagrantfile
+.vagrant/
+*.AppleDouble/

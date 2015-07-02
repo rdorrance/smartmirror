@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+    height: 100%;
+	font-size: 1em;
+}
+body {
+    height: 100%;
+	background: #000 no-repeat;
+	color: #fff;
+	font-size: 1.85em;
+	font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+	-webkit-transition: opacity 2s ease-out;
+	-webkit-transition-delay: 1s;
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+
+.module {
+	position: absolute;
+	padding: 3%;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.truncate {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+div[class*=-right] {
+	right: 0;
+}
+div[class*=-left] {
+	left: 0;
+}
+div[class*=top-] {
+	top: 0;
+}
+div[class*=bottom-] {
+	bottom: 0;
+}
+div.middle {
+	top: 35%;
+}
+div[class*=-center] {
+	left: 0;
+	right: 0;
+}
+.center {
+	left: 30%;
+	top: 30%;
+	bottom: 30%;
+	text-align: center;
+}
+sup {
+	font-size: .5em;
+}
+table.padding td {
+	padding: .25em;
+}
+.border-bottom {
+	border-bottom: 1px solid;
+}
+.event {
+    white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lighter {
+	opacity: .65;
+}
+.lightest {
+	opacity: .5;
+}
+.smaller {
+	font-size: .85em;
+}
+.smallest {
+	font-size: .5em;
+}
+.largest {
+	font-size: 3em;
+}
+.larger {
+	font-size: 2em;
+}
+.padding-bottom {
+    padding-bottom: .5em;	
+}
+.margin-bottom {
+    margin-bottom: .5em;	
+}
+.fa {
+    position: relative;
+    top: -1px;
+}
+.ng-show {
+}
+.refresh {
+    -webkit-animation: pulse 1.5s infinite;
+}
+@-webkit-keyframes pulse {
+    0%, 100% {
+        opacity: .35;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.debug {
+    outline: 1px green solid;
+}
+
+
+
+#animation ul { /* The list with elements */
+}
+#animation li { /* Common styles for the list elements */
+}
+#animation li:nth-of-type(1) { /* First element of the list */
+    -webkit-animation: fadein 30s ease-in-out -15s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
+}
+#animation li:nth-of-type(2) { /* Second element of the list */
+    -webkit-animation: fadein 30s ease-in-out 15s infinite alternate; 
+}
+
+/* Defines the animation keyframes */
+@-webkit-keyframes fadein {
+    0% {           /* "Delay" of the animation - 66% of the duration time (100 - 100/number of elements) */ 
+        opacity: 0;
+    }
+    50% {          /* Actual beginning of the fade in animation */
+        opacity: 0;
+    }
+    55% {          /* The fade in animation takes 10% of the duration time */
+        opacity: 1;
+    }    
+    100% {
+        opacity: 1;
+    }    
+}
+
+

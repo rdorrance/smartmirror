@@ -1,0 +1,21 @@
+			<!-- WEATHER -->
+			<div class="module bottom-center">
+			    <div class="today padding-bottom margin-bottom border-bottom">
+				    <div class="lightest" ng-bind="options.location"></div>
+	    			<div class="temp-today larger">
+	    			    <i class="{{weatherService.getIcon(today.weather[0].description)}}"></i>
+	    			    <span class="temp-hi">{{today.temp.max | number: 0}}˚</span>
+	    			    <span class="temp-low lighter smaller">{{today.temp.min | number: 0}}˚</span>
+	    			</div>
+			    </div>
+				<table class="padding">
+					<tbody ng-repeat="day in forecast">
+						<tr>
+							<td align="right">{{ day.dt * 1000 | date: 'EEE'}}</td>
+							<td><i class="{{weatherService.getIcon(day.weather[0].description)}}"></i></td>
+							<td class="temp-hi">{{day.temp.max | number: 0}}˚</td>
+							<td class="temp-low lighter">{{day.temp.min | number: 0}}˚</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
