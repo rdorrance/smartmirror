@@ -4,7 +4,7 @@
 }
 html {
     height: 100%;
-	font-size: 1em;
+	font-size: 2em;
 }
 body {
     height: 100%;
@@ -79,16 +79,16 @@ table.padding td {
 	text-overflow: ellipsis;
 }
 .lighter {
-	opacity: .65;
+	opacity: .85;
 }
 .lightest {
-	opacity: .5;
+	opacity: .65;
 }
 .smaller {
-	font-size: .85em;
+	font-size: 0.85em;
 }
 .smallest {
-	font-size: .5em;
+	font-size:0.5em;
 }
 .largest {
 	font-size: 3em;
@@ -97,10 +97,10 @@ table.padding td {
 	font-size: 2em;
 }
 .padding-bottom {
-    padding-bottom: .5em;	
+    padding-bottom: 2em;	
 }
 .margin-bottom {
-    margin-bottom: .5em;	
+    margin-bottom: 2em;	
 }
 .fa {
     position: relative;
