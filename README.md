@@ -16,4 +16,4 @@ Add the following to /etc/xdg/lxsession/LXDE-pi/autostart:
 @xset s off
 @xset -dpms
 @xset s noblank
-@chromium --kiosk --incognito http://localhost/~pi
+@chromium --kiosk --disable-translate --incognito http://localhost/~pi
