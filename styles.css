@@ -130,10 +130,14 @@ table.padding td {
 #animation li { /* Common styles for the list elements */
 }
 #animation li:nth-of-type(1) { /* First element of the list */
-    animation: fadein 90s ease-in-out -45s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
+	-webkit-animation: fadein 45s ease-in-out 0s infinite alternate;
+	-moz-animation: fadein 45s ease-in-out 0s infinite alternate;
+    animation: fadein 45s ease-in-out 0s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
 }
 #animation li:nth-of-type(2) { /* Second element of the list */
-    animation: fadein 90s ease-in-out 45s infinite alternate; 
+	-webkit-animation: fadeout 45s ease-in-out 0s infinite alternate;
+	-moz-animation: fadeout 45s ease-in-out 0s infinite alternate;
+    animation: fadeout 45s ease-in-out 0s infinite alternate; 
 }
 
 @keyframes fadein {
@@ -150,5 +154,75 @@ table.padding td {
         opacity: 1;
     }    
 }
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }    
+    100% {
+        opacity: 1;
+    }    
+}
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }    
+    100% {
+        opacity: 1;
+    }    
+}
 
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }    
+    100% {
+        opacity: 0;
+    }    
+}
+@-webkit-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }    
+    100% {
+        opacity: 0;
+    }    
+}
+@-moz-keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }    
+    100% {
+        opacity: 0;
+    }    
+}
 
