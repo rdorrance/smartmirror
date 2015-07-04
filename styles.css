@@ -69,10 +69,10 @@ sup {
 	font-size: .5em;
 }
 table.padding td {
-	padding: .25em;
+	padding: .1em;
 }
 .border-bottom {
-	border-bottom: 1px solid;
+	border-bottom: 4px solid;
 }
 .event {
     white-space: nowrap;
@@ -97,10 +97,10 @@ table.padding td {
 	font-size: 2em;
 }
 .padding-bottom {
-    padding-bottom: 2em;	
+    padding-bottom: 0em;	
 }
 .margin-bottom {
-    margin-bottom: 2em;	
+    margin-bottom: 0.25em;	
 }
 .fa {
     position: relative;
