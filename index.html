@@ -23,14 +23,18 @@
 		
 		<div ng-class="{show:show_app}" class="wrapper ng-cloak">
 			
-			<!-- CLOCK -->
+			<!-- 
+			<!-- CLOCK --
 			<div class="module larger top-left">
 				<i class="ion-ios7-clock-outline"></i> {{time | date: 'h:mm' }}<sup>{{time | date: 'a' }}</sup>
 			</div>
 			
-			<!-- DATE -->
+			<!-- DATE --
+			-->
 			<div class="module larger top-right">
-	            <i class="ion-ios7-calendar-outline"></i> {{time | date: 'MMM d' }}
+	            <i class="ion-ios7-clock-outline"></i> {{time | date: 'h:mm' }}<sup>{{time | date: 'a' }}</sup>
+				<br>
+				<i class="ion-ios7-calendar-outline"></i> {{time | date: 'MMM d' }}
 			</div>
 			
 			
