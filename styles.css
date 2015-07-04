@@ -130,10 +130,10 @@ table.padding td {
 #animation li { /* Common styles for the list elements */
 }
 #animation li:nth-of-type(1) { /* First element of the list */
-    animation: fadein 4s ease-in-out 0s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
+    animation: fadein 90s ease-in-out -45s infinite alternate; /* delay = -duration * 66%. Note the negative delay to skip the "keyframes delay" */
 }
 #animation li:nth-of-type(2) { /* Second element of the list */
-    animation: fadein 4s ease-in-out 4s infinite alternate; 
+    animation: fadein 90s ease-in-out 45s infinite alternate; 
 }
 
 @keyframes fadein {
