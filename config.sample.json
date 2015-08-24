@@ -1,5 +1,5 @@
 {
-	"pir_pin": 7,
+	"pir_pin": 16,
 	"display_sleep": 20,
 	"service_refresh": 60,
 	"location": "New York, NY",
