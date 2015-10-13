@@ -101,7 +101,7 @@ app.service('weatherService',function() {
     // update our scope with weather
     this.update = function($scope,$http) {
         // get weather
-        $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?units=imperial&cnt=' + $scope.options.num_of_days + '&q=' + $scope.options.location)
+        $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?units=imperial&cnt=' + $scope.options.num_of_days + '&q=' + $scope.options.location + '&APPID=' + $scope.options.weather_api_key)
             .success(function(data) {
 	            if (data.list) {
 	                // get today's weather
