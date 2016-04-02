@@ -62,16 +62,15 @@ app.service('weatherService',function() {
                 case 'mist':
                 case 'smoke':
                 case 'haze':
-                case 'Sand/Dust Whirls':
-                case 'Fog':
+                case 'sand, dust whirls':
+                case 'fog':
+                case 'sand':
+                case 'dust':
+                case 'volcanic ash':
                     return 'wi-fog';
                 break;
 
                 //Clouds
-                case 'sky is clear':
-                    return 'wi-day-sunny';
-                break;
-
                 case 'few clouds':
                 case 'scattered clouds':
                 case 'broken clouds':
@@ -79,6 +78,11 @@ app.service('weatherService',function() {
                     return 'wi-day-sunny-overcast';
                 break;
 
+				//Clear
+				case 'clear sky':
+                    return 'wi-day-sunny';
+                break;
+				
                 //Extreme
                 case 'tornado':
                     return 'wi-tornado';
